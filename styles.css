@@ -1,0 +1,145 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #eef6f6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header */
+.header {
+    width: 100%;
+    height: 120px;
+    background: url('images/bg-header-desktop.svg') no-repeat center center;
+    background-size: cover;
+}
+
+/* Filter Bar */
+.filter-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    width: 80%;
+    max-width: 900px;
+    padding: 15px;
+    margin: -40px auto 20px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.filter-tag {
+    display: flex;
+    align-items: center;
+    background: #eef6f6;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.remove-tag {
+    margin-left: 8px;
+    cursor: pointer;
+    background: #5ba4a4;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Clear Button */
+#clear-btn {
+    background: none;
+    border: none;
+    font-weight: bold;
+    color: #5ba4a4;
+    cursor: pointer;
+    padding: 10px;
+    border: green;
+    border-style: solid;
+    border-width: 1px;
+}
+
+#clear-btn:hover {
+    text-decoration: underline;
+    padding: 10px;
+    background-color: red;
+    border-radius: 20%;
+}
+
+/* Job Listings */
+.job-listings {
+    width: 80%;
+    max-width: 900px;
+}
+
+.job-card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.job-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.job-info img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.job-details h3 {
+    margin: 5px 0;
+    color: #2c3e50;
+}
+
+.job-tags {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.tag {
+    background: #eef6f6;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #5ba4a4;
+    cursor: pointer;
+}
+
+.tag:hover {
+    background: #5ba4a4;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .job-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
